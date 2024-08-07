@@ -1,0 +1,7 @@
+# grep -E '^[^\|]+\|(p|LJ)[^\|]+\|[^\|]+$' /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/train_english.txt > /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/train_english_first.txt
+# grep -E '^[^\|]+\|(p|LJ)[^\|]+\|[^\|]+$' /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/validation_english.txt > /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/validation_english_first.txt
+# grep -v -E '^[^\|]+\|(p|LJ)[^\|]+\|[^\|]+$' /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/train_english.txt > /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/train_english_second.txt
+# grep -v -E '^[^\|]+\|(p|LJ)[^\|]+\|[^\|]+$' /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/validation_english.txt > /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/validation_english_second.txt
+
+grep -v -E '^[^\|]+\|(p|LJ)[^\|]+\|[^\|]+$' /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/train_english.txt | grep -v -F -f /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/ignore.txt > /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/train_english_new.txt
+grep -v -E '^[^\|]+\|(p|LJ)[^\|]+\|[^\|]+$' /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/validation_english.txt | grep -v -F -f /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/ignore.txt > /home/ubisoft-laforge-daft-exprt/trainings/ENGLISH_FIRST_ALL/validation_english_new.txt

@@ -1,0 +1,9 @@
+trainings/
+data_dir*/
+datasets*/
+scripts/dataset*/
+scripts/style_bank/
+.eggs/
+.vscode/
+src/daft_exprt/__pycache__/
+scripts/benchmarks/
